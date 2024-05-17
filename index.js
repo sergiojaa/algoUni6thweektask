@@ -2,6 +2,7 @@
 // let array1 = [1, 2, 4, 5, 7, 8,10]
 // let array2 = array1.filter((num)=> num%2 ===0  )
 // console.log(array2)
+
 //2.მომხმარებლების გაფილტვრა ასაკის მიხედვით: მომხმარებლის ობიექტების მასივის გათვალისწინებით, თვისებების სახელით და ასაკის მიხედვით,
 // გამოიყენეთ ფილტრი 18 წელზე უფროსი ასაკის მომხმარებელთა მასივის შესაქმნელად.
 // let array1 = [
@@ -29,15 +30,18 @@
 // ]
 // let array2 = array1.filter( user=> user.age >= 18   )
 // console.log(array2)
+
 //3.სტრიქონების გაფილტვრა სიგრძის მიხედვით: სტრიქონების მასივის გათვალისწინებით, გამოიყენეთ ფილტრი მასივის შესაქმნელად, 
 //რომელიც შეიცავს მხოლოდ 5 სიმბოლოზე მეტ სტრიქონებს.
 // let array1 = ['gio','nika','sandro','daviti','andria','sergi']
 // let array2 = array1.filter(word=> word.length > 5 )
 // console.log(array2)
+
 //4.გააორმაგეთ რიცხვები: მოცემული რიცხვების მასივისთვის, შექმენით ახალი მასივი, სადაც თითოეული რიცხვი გაორმაგდება.
 // let array1 = [10,20,30,40,50]
 // let array2 = array1.map(num => num * 2)
 // console.log(array2)
+
 //5.მომხმარებლის ობიექტების მასივის გათვალისწინებით, შექმენით მასივი,სადაც მხოლოდ მომხმარებლის სახელებს დააბრუნებს.
 // let array1 = [
 //     {
@@ -64,10 +68,14 @@
 // ]
 // let array2 = array1.map(arr2 => arr2.name)
 // console.log(array2)
+
 //6.სტრიქონების მასივის გათვალისწინებით, შევქმნათ ახალი მასივი, სადაც თითოეული სტრიქონი გარდაიქმნება მაღალ რეგისტრში,ანუ დიდ ასოებად..
 // let array1 = ['nika','giorgi','beka','tekla','nini']
 // let array2 = array1.map(word => word.toUpperCase())
 // console.log(array2)
+
+
+
 //7.იპოვეთ რიცხვების მასივში ყველა რიცხვის ჯამი.ვიყენებთ მაღალი დონის ფუნქციებს.
 // function sum(arr){
 //     let sum = 0;
@@ -86,7 +94,20 @@
 
 //8.გვაქვს მასივი,სადაც ყრია ადამიანის სახელები,ჩვენი მიზანია შევქმნათ ობიექტი, რომელშიც მითითებული იქნება თუ რამდენჯერ მეორდება
 // მასივში თითოეული სახელი. მაგალითად: \{ "გიო": 2, "საბა": 5, "ნიკა": 3 \}
-
+// function countName(names){
+//     const nameCount = []
+//     names.forEach(name => {
+//         if(nameCount[name]){
+//             nameCount[name]++
+//         }else{
+//             nameCount[name] = 1
+//         }
+//     } )
+//     return nameCount
+// }
+// const array = ['nika','gio','nika','sergi','nika','sergi','nika','sandro','sandro',]
+// const name = countName(array)
+// console.log(name)
 
 
 //9.რიცხვების მასივის გათვალისწინებით,დავალაგოთ მასივი ზრდადობით.
@@ -161,6 +182,7 @@
 
 // }
 // checkAge(array1)
+
 //17.სტრიქონების მასივის გათვალისწინებით, შეამოწმეთ,არის თუ არა ყველა სტრიქონი ცარიელი.
 // let array1 = ['gio','','nika']
 // function checkArray(arr){
@@ -223,6 +245,17 @@
 //23.დაწერეთ ფუნქცია, რომელიც მიიღებს წინადადებას შეყვანად და აბრუნებს უნიკალური სიტყვების მასივს ანბანური თანმიმდევრობით,
 // გამოკლებით გავრცელებული ინგლისური სიტყვების, როგორიცაა "the", "a" და "is".
 
-//24.დაწერეთ პროგრამა, რომ ამოიღოთ ყველა ცრუ მნიშვნელობა მასივიდან.
 
+//24.დაწერეთ პროგრამა, რომ ამოიღოთ ყველა ცრუ მნიშვნელობა მასივიდან.
+// let array1 = ['sergi', false, 1, 0, null]
+// let array2 = array1.filter(Boolean )
+// console.log(array2)
 //25.დაწერეთ პროგრამა წინადადებაში სიტყვების თანმიმდევრობის შესაბრუნებლად
+// function reverseSentence(words){
+//     let word = words.split(' ')
+//     let reverseWords = word.reverse()
+//     return reverseWords
+// }
+// let words = 'hi i am sergi kaliashvili'
+// let reverseWords = reverseSentence(words)
+// console.log(reverseWords)
